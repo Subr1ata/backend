@@ -9,6 +9,10 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.92.0"
 uvicorn = "^0.20.0"
+peewee = "^3.15.4"
+psycopg2-binary = "^2.9.5"
+mysql = "^0.0.3"
+db-sqlite3 = "^0.0.1"
 
 
 [build-system]
