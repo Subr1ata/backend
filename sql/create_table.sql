@@ -14,7 +14,7 @@ create table product (
 	cost int,
 	price int,
 	star int,
-	image bigint,
+	image bigint[],
 	description text,
 	sales int,
 	comment text,

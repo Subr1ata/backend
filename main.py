@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from sql_app.database import db
+from config.database import db
 from router import api
 
 app = FastAPI()

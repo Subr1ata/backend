@@ -16,7 +16,7 @@ router.include_router(
 )
 
 router.include_router(
-    product.router,
+    image.router,
     prefix='/image',
     tags=['image']
 )

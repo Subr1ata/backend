@@ -1,6 +1,6 @@
 from peewee import CharField, Model, BooleanField
 
-from sql_app.database import db
+from config.database import db
 
 
 class BaseModel(Model):
