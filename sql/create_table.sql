@@ -14,11 +14,19 @@ create table product (
 	cost int,
 	price int,
 	star int,
-	img int,
+	image bigint,
 	description text,
 	sales int,
 	comment text,
 	ship_comment text,
 	active bool default true,
 	constraint pkey_product primary key (id)
+)
+
+create table image (
+	id bigserial not null,
+	name text,
+	url text,
+	active bool default true,
+	constraint pkey_product primary key (id),
 )
