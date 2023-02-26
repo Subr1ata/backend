@@ -16,3 +16,7 @@ class Product(BaseModel):
 
     class Meta:
         db_table = 'product'
+
+    @classmethod
+    def get_list(cls):
+        return list(cls.select())
