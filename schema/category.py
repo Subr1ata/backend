@@ -6,3 +6,7 @@ class Category(BaseSchema):
     parent: int = None
     logo: str = None
 
+class CategoryCreate(BaseSchema):
+    name: str
+    parent: int = None
+    logo: str = None
