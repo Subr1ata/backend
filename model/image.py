@@ -4,6 +4,7 @@ from datetime import datetime
 from fastapi.responses import FileResponse
 from config.get_env import BACKEND_URL
 
+
 class Image(BaseModel):
     url = CharField()
 
@@ -18,7 +19,7 @@ class Image(BaseModel):
         time_now = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
         path = f'{dir}/{time_now}.png'
         with open(path, "wb+") as file_object:
-            file_object.write(image.file.read())
+            file_object.write(image)
         
         url = f'{BACKEND_URL}/image/?path={path}'
 

@@ -1,5 +1,6 @@
 from schema.base import BaseSchema
 from fastapi import UploadFile
+from typing import List
 
 class ProductBase(BaseSchema):
     name: str
@@ -7,7 +8,7 @@ class ProductBase(BaseSchema):
     cost: int
     price: int
     star: int = 5
-    image: UploadFile
+    image: str
     description: str = None
     sales: int = 0
     comment: str = None
